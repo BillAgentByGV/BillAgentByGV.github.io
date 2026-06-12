@@ -1,0 +1,29 @@
+# BillingAgent
+
+> Programa de escritorio con inteligencia artificial para empresas y contadores de El Salvador: escanea el correo, encuentra y clasifica los DTE (documentos tributarios electrónicos), arma el libro de compras en Excel y verifica cada documento contra el Ministerio de Hacienda. Los datos nunca salen de la computadora del cliente.
+
+## Qué hace
+
+- Escanea automáticamente el correo de la empresa (Gmail, acceso de solo lectura) y encuentra las facturas electrónicas (DTE: CCF, facturas, notas de crédito/débito, retenciones).
+- Clasifica y archiva cada documento en carpetas por mes y tipo.
+- Genera el libro de compras en Excel, cuadrado y listo para la declaración de IVA (F-07).
+- Verifica cada DTE contra el verificador público del Ministerio de Hacienda de El Salvador, incluyendo detección de documentos anulados.
+- Usa IA para extraer datos de facturas que llegan solo en PDF sin archivo oficial JSON.
+- Incluye asistente conversacional que explica discrepancias en español de contador.
+- Multiempresa: cada empresa con su perfil, correo, carpetas y libros separados.
+- Privacidad: corre localmente en Windows; las facturas y libros viven en las carpetas del cliente, no en la nube.
+
+## Precios (USD)
+
+- Inicio: $200 (programa + primer mes de suscripción)
+- Suscripción mensual: $75
+- Suscripción trimestral: $200
+- Si se cancela la suscripción, el programa sigue funcionando; solo se pausan la IA, la verificación automática y las actualizaciones.
+
+## Quiénes somos
+
+Producto creado por García Vidal Contaduría y Auditoría, firma de contadores y auditores en El Salvador, a partir del sistema que usa internamente para llevar las contabilidades de sus propios clientes. Es un proyecto salvadoreño de automatización contable con inteligencia artificial.
+
+Contacto: garciavidalcya@gmail.com
+Instagram: https://www.instagram.com/garciavidalc.a
+TikTok: https://www.tiktok.com/@firma.garcia.vida
