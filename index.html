@@ -35,7 +35,7 @@
       "inLanguage": "es",
       "countriesSupported": "SV",
       "offers": [
-        { "@type": "Offer", "name": "Inicio — programa + primer mes", "price": "200", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Programa — pago único, tuyo para siempre (incluye primer mes de servicios)", "price": "200", "priceCurrency": "USD" },
         { "@type": "Offer", "name": "Suscripción mensual", "price": "75", "priceCurrency": "USD" },
         { "@type": "Offer", "name": "Suscripción trimestral", "price": "200", "priceCurrency": "USD" }
       ],
@@ -238,6 +238,14 @@
   /* ───────── PRECIOS ───────── */
   .precios { background: linear-gradient(180deg, var(--cream), #EDEFE9); }
   .pricegrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; margin-top: 26px; align-items: stretch; }
+  .pricesteps { display: grid; grid-template-columns: 1fr 2fr; gap: 28px; margin-top: 26px; align-items: start; }
+  @media (max-width: 920px) { .pricesteps { grid-template-columns: 1fr; } }
+  .pstep-head { display: flex; align-items: center; gap: 12px; font-family: var(--display); font-size: 19px; font-weight: 700; margin-bottom: 16px; }
+  .pstep-head small { font-family: var(--body); font-weight: 500; font-size: 13px; color: #5B6B70; }
+  .pstep-num { width: 30px; height: 30px; min-width: 30px; border-radius: 50%; background: var(--teal); color: #fff; display: grid; place-items: center; font-size: 15px; font-weight: 800; }
+  .pstep-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; align-items: stretch; }
+  .pstep-why { margin-top: 16px; font-size: 13.5px; line-height: 1.55; color: #5B6B70; padding-left: 14px; border-left: 3px solid var(--teal-soft); }
+  .pstep-why strong { color: var(--ink); }
   .seg-title { margin-top: 48px; display: flex; align-items: center; gap: 14px; font-family: var(--display); font-size: 20px; font-weight: 700; }
   .seg-title .seg-ico { width: 38px; height: 38px; border-radius: 10px; background: var(--teal-soft); display: grid; place-items: center; font-size: 18px; }
   .seg-title small { font-family: var(--body); font-weight: 500; font-size: 13.5px; color: #5B6B70; }
@@ -453,46 +461,56 @@
 <section class="precios" id="precios">
   <div class="wrap">
     <span class="eyebrow reveal">Precios</span>
-    <h2 class="reveal">Empezá hoy. Sin contratos forzosos.</h2>
-    <p class="lead reveal d1">Un solo pago de entrada con tu primer mes incluido, y después elegís cómo seguir.</p>
+    <h2 class="reveal">El programa se compra una vez. Los servicios se suscriben.</h2>
+    <p class="lead reveal d1">Son dos cosas distintas, y lo justo es cobrarlas distinto: el programa queda instalado en tu computadora y es tuyo; la suscripción paga lo que sí corre cada mes — la IA, la verificación con Hacienda, las actualizaciones y el soporte.</p>
     <div class="seg-title reveal"><span class="seg-ico">🏢</span> Para tu empresa <small>— llevás solo tu propia contabilidad</small></div>
-    <div class="pricegrid">
-      <div class="price reveal">
-        <span class="plan">Inicio</span>
-        <div class="amount">$200<small> único</small></div>
-        <div class="per">Programa + primer mes incluido</div>
-        <ul>
-          <li>Programa instalado en tu computadora</li>
-          <li>Puesta en marcha y conexión de tu correo</li>
-          <li>Primer mes de suscripción incluido</li>
-          <li>Capacitación inicial para tu equipo</li>
-        </ul>
-        <a class="btn btn-primary" href="#contacto">Comprar el programa</a>
+    <div class="pricesteps">
+      <div class="reveal">
+        <div class="pstep-head"><span class="pstep-num">1</span> Comprás el programa <small>una sola vez</small></div>
+        <div class="price">
+          <span class="plan">El programa</span>
+          <div class="amount">$200<small> pago único</small></div>
+          <div class="per">Tuyo para siempre · incluye tu primer mes de servicios</div>
+          <ul>
+            <li>Instalado en tu computadora, no en la nube</li>
+            <li>Sigue siendo tuyo aunque no te suscribás</li>
+            <li>Puesta en marcha y conexión de tu correo</li>
+            <li>Capacitación inicial para tu equipo</li>
+          </ul>
+          <a class="btn btn-primary" href="#contacto">Comprar el programa</a>
+        </div>
+        <p class="pstep-why"><strong>¿Por qué pago único?</strong> Porque el programa es una herramienta que queda instalada en tu máquina, como tu Excel o tu impresora. No te alquilamos tu propio sistema.</p>
       </div>
-      <div class="price reveal d1">
-        <span class="plan">Mensual</span>
-        <div class="amount">$75<small> /mes</small></div>
-        <div class="per">Después de tu primer mes</div>
-        <ul>
-          <li>IA incluida: extracción de PDFs + asistente</li>
-          <li>Verificación contra Hacienda al cierre</li>
-          <li>Actualizaciones del programa</li>
-          <li>Soporte directo</li>
-        </ul>
-        <a class="btn btn-ghost" href="#contacto">Suscribirme</a>
-      </div>
-      <div class="price featured reveal d2">
-        <span class="savetag">Ahorrás $25</span>
-        <span class="plan">Trimestral</span>
-        <div class="amount">$200<small> /3 meses</small></div>
-        <div class="per">Equivale a $66.67 al mes</div>
-        <ul>
-          <li>Todo lo del plan mensual</li>
-          <li>Un solo pago por trimestre</li>
-          <li>Precio congelado mientras renovés</li>
-          <li>Prioridad de soporte en cierres</li>
-        </ul>
-        <a class="btn btn-primary" href="#contacto">Elegir trimestral</a>
+      <div class="reveal d1">
+        <div class="pstep-head"><span class="pstep-num">2</span> Elegís tu suscripción <small>desde el segundo mes</small></div>
+        <div class="pstep-grid">
+          <div class="price">
+            <span class="plan">Mensual</span>
+            <div class="amount">$75<small> /mes</small></div>
+            <div class="per">Sin compromiso de permanencia</div>
+            <ul>
+              <li>IA: extracción de PDFs + asistente</li>
+              <li>Verificación contra Hacienda al cierre</li>
+              <li>Actualizaciones del programa</li>
+              <li>Soporte directo</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contacto">Suscribirme</a>
+          </div>
+          <div class="price featured">
+            <span class="savetag">Ahorrás $25</span>
+            <span class="plan">Trimestral</span>
+            <div class="amount">$200<small> /3 meses</small></div>
+            <div class="per">Equivale a $66.67 al mes</div>
+            <ul>
+              <li>Todo lo del plan mensual</li>
+              <li>Un solo pago por trimestre</li>
+              <li>Precio congelado mientras renovés</li>
+              <li>Prioridad de soporte en cierres</li>
+            </ul>
+            <a class="btn btn-primary" href="#contacto">Elegir trimestral</a>
+          </div>
+        </div>
+        <p class="pstep-why"><strong>¿Por qué una suscripción aparte?</strong> Porque estos servicios sí tienen un costo cada mes: la IA que lee tus PDFs y te responde, la verificación de cada documento con Hacienda, las mejoras y el soporte. Pagás solo mientras los usás — y si un día la pausás, el programa sigue siendo tuyo y sigue generando tus libros.</p>
       </div>
     </div>
     <div class="seg-title reveal"><span class="seg-ico">👥</span> Para despachos contables <small>— llevás la contabilidad de varios clientes</small></div>
