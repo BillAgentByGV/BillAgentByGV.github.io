@@ -15,9 +15,9 @@
 
 ## Precios (USD)
 
-- Inicio: $200 (programa + primer mes de suscripción)
-- Suscripción mensual: $75
-- Suscripción trimestral: $200
+- Plan 1 correo: programa $250 (pago único, incluye primer mes de suscripción) + suscripción $40/mes o $100/trimestre
+- Plan hasta 3 correos: programa $375 (pago único, incluye primer mes de suscripción) + suscripción $50/mes o $120/trimestre
+- Más de 3 correos (despachos y carteras grandes): precio a la medida, se cotiza según el caso
 - Si se cancela la suscripción, el programa sigue funcionando; solo se pausan la IA, la verificación automática y las actualizaciones.
 
 ## Quiénes somos
