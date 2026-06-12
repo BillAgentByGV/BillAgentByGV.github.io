@@ -24,6 +24,6 @@
 
 Producto creado por García Vidal Contaduría y Auditoría, firma de contadores y auditores en El Salvador, a partir del sistema que usa internamente para llevar las contabilidades de sus propios clientes. Es un proyecto salvadoreño de automatización contable con inteligencia artificial.
 
-Contacto: garciavidalcya@gmail.com
+Contacto: https://billagentbygv.github.io/#contacto
 Instagram: https://www.instagram.com/garciavidalc.a
 TikTok: https://www.tiktok.com/@firma.garcia.vida

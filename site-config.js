@@ -1,0 +1,18 @@
+window.BILLING_SITE_CONFIG = {
+  organizationName: "García Vidal Contaduría y Auditoría",
+  organizationShortName: "García Vidal",
+  organizationTagline: "Contaduría y Auditoría",
+  logoBrand: "GARCÍA VIDAL",
+  logoTagline: "CONTADURÍA Y AUDITORÍA",
+  productTagline: "Contaduría y Auditoría · El Salvador",
+  footerBrandText: "García Vidal — Contaduría y Auditoría · San Salvador, El Salvador",
+  heroProofLead: "La usamos nosotros.",
+  heroProofText: "García Vidal — Contaduría y Auditoría cierra los meses de sus propios clientes con BillingAgent. No te vendemos una promesa: es nuestra herramienta de trabajo.",
+  siteUrl: "https://billagentbygv.github.io/",
+  contactEmail: "garciavidalcya@gmail.com",
+  contactSubject: "Quiero una demo de BillingAgent",
+  contactFormUrl: "https://formsubmit.co/garciavidalcya@gmail.com",
+  contactPageUrl: "https://billagentbygv.github.io/#contacto",
+  instagramUrl: "https://www.instagram.com/garciavidalc.a",
+  tiktokUrl: "https://www.tiktok.com/@firma.garcia.vida",
+};
