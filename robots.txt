@@ -32,4 +32,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://mvme777.github.io/sitemap.xml
+Sitemap: https://billagentbygv.github.io/sitemap.xml
