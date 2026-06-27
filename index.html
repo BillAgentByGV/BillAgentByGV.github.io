@@ -36,8 +36,8 @@
       "countriesSupported": "SV",
       "offers": [
         { "@type": "Offer", "name": "Programa — 1 correo (pago único, tuyo para siempre, incluye primer mes de servicios)", "price": "250", "priceCurrency": "USD" },
-        { "@type": "Offer", "name": "Suscripción mensual — 1 correo", "price": "40", "priceCurrency": "USD" },
-        { "@type": "Offer", "name": "Suscripción trimestral — 1 correo", "price": "100", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Suscripción mensual — 1 correo", "price": "25", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Suscripción trimestral — 1 correo", "price": "65", "priceCurrency": "USD" },
         { "@type": "Offer", "name": "Programa — hasta 3 correos (pago único, tuyo para siempre, incluye primer mes de servicios)", "price": "375", "priceCurrency": "USD" },
         { "@type": "Offer", "name": "Suscripción mensual — hasta 3 correos", "price": "50", "priceCurrency": "USD" },
         { "@type": "Offer", "name": "Suscripción trimestral — hasta 3 correos", "price": "120", "priceCurrency": "USD" }
@@ -120,7 +120,7 @@
   @media (prefers-reduced-motion: reduce) {
     .reveal { opacity: 1; transform: none; transition: none; }
     * { animation: none !important; }
-    /* demo del hero estática: panel en fase de clasificación, filas visibles */
+    /* animación del hero estática: panel en fase de clasificación, filas visibles */
     .ha-row { opacity: 1; }
     .ha-email, .ha-scan { display: none; }
   }
@@ -167,7 +167,7 @@
     display: grid; place-items: center; font-size: 15px; font-weight: 800; }
   .heroctas { display: flex; gap: 14px; flex-wrap: wrap; }
   .hero .btn-ghost { border-color: rgba(255,255,255,.3); color: #fff; }
-  /* demo continua: correos -> clasificación -> libro -> verificación Hacienda (ciclo de 14s) */
+  /* animación continua: correos -> clasificación -> libro -> verificación Hacienda (ciclo de 14s) */
   .flow { position: relative; height: 450px; display: grid; place-items: center; transform: scale(.85); }
   .ha-caption { position: absolute; top: 2px; left: 50%; transform: translateX(-50%); z-index: 6; color: #DFF6F3;
     font-size: 11px; font-weight: 850; letter-spacing: .8px; text-transform: uppercase; white-space: nowrap; }
@@ -398,7 +398,7 @@
     .logo-firm { font-size: 9.5px; letter-spacing: 1.4px; white-space: nowrap; }
     .navlinks { gap: 0; }
     .navlinks .cta { padding: 7px 12px; font-size: 13px; }
-    /* En teléfono la demo sube entre el texto y el cheque dorado:
+    /* En teléfono la animación sube entre el texto y el cheque dorado:
        el contenedor de texto se disuelve (display:contents) y el orden lo da `order` */
     .herogrid { gap: 0; }
     .herogrid > div:first-child { display: contents; }
@@ -412,7 +412,7 @@
     .herobadge { padding: 11px 12px; margin-bottom: 14px; font-size: 12.5px; line-height: 1.45; }
     .heroctas { gap: 10px; }
     .heroctas .btn { flex: 1 1 0; padding: 11px 10px; font-size: 14px; text-align: center; }
-    /* Demo continua a escala de teléfono: más compacta (zoom reduce también el layout) */
+    /* Animación continua a escala de teléfono: más compacta (zoom reduce también el layout) */
     .flow { height: 384px; margin: 2px 0 12px; transform: none; zoom: .78; }
     .ha-panel { border-radius: 32px; }
     .ha-row { border-radius: 14px; }
@@ -600,7 +600,7 @@
           <div class="subrow"><span>Mensual</span><strong><span id="p1SubMonthly">$40</span><small> /mes</small></strong></div>
           <div class="subrow"><span>Trimestral <em class="save" id="p1SubSave">Ahorrás $20</em></span><strong><span id="p1SubQuarterly">$100</span><small> /3 meses</small></strong></div>
         </div>
-        <a class="btn btn-ghost" href="#contacto" data-intent="Quiero comprar — 1 correo">Comprar — 1 correo</a>
+        <a class="btn btn-ghost" id="buyProgram1" href="#precios" target="_blank" rel="noopener">Comprar — 1 correo</a>
       </div>
       <div class="price featured reveal d1">
         <span class="plan" id="p3Name">Hasta 3 correos</span>
@@ -616,7 +616,7 @@
           <div class="subrow"><span>Mensual</span><strong><span id="p3SubMonthly">$50</span><small> /mes</small></strong></div>
           <div class="subrow"><span>Trimestral <em class="save" id="p3SubSave">Ahorrás $30</em></span><strong><span id="p3SubQuarterly">$120</span><small> /3 meses</small></strong></div>
         </div>
-        <a class="btn btn-primary" href="#contacto" data-intent="Quiero comprar — hasta 3 correos">Comprar — hasta 3 correos</a>
+        <a class="btn btn-primary" id="buyProgram3" href="#precios" target="_blank" rel="noopener">Comprar — hasta 3 correos</a>
       </div>
     </div>
     <p class="pstep-why reveal"><strong>¿Por qué pago único y suscripción aparte?</strong> El programa queda instalado en tu máquina, como tu Excel o tu impresora — no te alquilamos tu propio sistema. La suscripción paga lo que sí corre cada mes: la IA que lee tus PDFs y te responde, la verificación de cada documento con Hacienda, las actualizaciones y el soporte. Si un día la pausás, el programa sigue siendo tuyo y sigue generando tus libros.</p>
@@ -634,7 +634,7 @@
       </div>
       <div class="fp-cta">
         <div class="fp-price" id="quotePriceLabel">Precio a tu medida</div>
-        <a class="btn btn-primary" href="#contacto" data-intent="Más de 3 correos — cotización">Cotizar mi caso</a>
+        <a class="btn btn-primary" href="#contacto" data-intent="Más de 3 correos — cotización">Agendá tu cita</a>
       </div>
     </div>
     <p class="price-note reveal">💡 <strong>Sin letra pequeña:</strong> si la suscripción termina, el programa sigue siendo tuyo y sigue generando tus libros — solo se pausan la IA, el asistente y las actualizaciones.</p>
@@ -747,6 +747,8 @@
   setText("p3SubQuarterly", site.pricingProgram3SubQuarterly);
   setText("p3SubSave", site.pricingProgram3SubSave);
   setText("quotePriceLabel", site.pricingQuoteLabel);
+  setLink("buyProgram1", site.pricingProgram1BuyUrl);
+  setLink("buyProgram3", site.pricingProgram3BuyUrl);
   const leadIntent = document.getElementById("leadIntent");
   document.querySelectorAll("a[data-intent]").forEach((link) => {
     link.addEventListener("click", () => {
@@ -787,7 +789,7 @@
   }, { threshold: 0.15 });
   document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
-  // Demo del hero: los textos cambian por JS sincronizado con la animación CSS,
+  // Animación del hero: los textos cambian por JS sincronizado con la animación CSS,
   // porque Safari no anima la propiedad content: en keyframes.
   const haPanelEl = document.getElementById("haPanel");
   if (haPanelEl) {

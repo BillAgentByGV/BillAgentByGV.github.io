@@ -19,13 +19,15 @@ window.BILLING_SITE_CONFIG = {
   // validate_site_config.py exige que el JSON-LD (index.html) y llms.txt coincidan.
   pricingProgram1Name: "1 correo",
   pricingProgram1Price: "$250",
-  pricingProgram1SubMonthly: "$40",
-  pricingProgram1SubQuarterly: "$100",
-  pricingProgram1SubSave: "Ahorrás $20",
+  pricingProgram1SubMonthly: "$25",
+  pricingProgram1SubQuarterly: "$65",
+  pricingProgram1SubSave: "Ahorrás $10",
+  pricingProgram1BuyUrl: "https://s.wompi.sv/1790235HZ4",
   pricingProgram3Name: "Hasta 3 correos",
   pricingProgram3Price: "$375",
   pricingProgram3SubMonthly: "$50",
   pricingProgram3SubQuarterly: "$120",
   pricingProgram3SubSave: "Ahorrás $30",
+  pricingProgram3BuyUrl: "https://s.wompi.sv/1790236HFr",
   pricingQuoteLabel: "Precio a tu medida",
 };
