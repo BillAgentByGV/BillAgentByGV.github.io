@@ -39,8 +39,11 @@
         { "@type": "Offer", "name": "Suscripción mensual — 1 correo", "price": "25", "priceCurrency": "USD" },
         { "@type": "Offer", "name": "Suscripción trimestral — 1 correo", "price": "65", "priceCurrency": "USD" },
         { "@type": "Offer", "name": "Programa — hasta 3 correos (pago único, tuyo para siempre, incluye primer mes de servicios)", "price": "375", "priceCurrency": "USD" },
-        { "@type": "Offer", "name": "Suscripción mensual — hasta 3 correos", "price": "50", "priceCurrency": "USD" },
-        { "@type": "Offer", "name": "Suscripción trimestral — hasta 3 correos", "price": "120", "priceCurrency": "USD" }
+        { "@type": "Offer", "name": "Suscripción mensual — hasta 3 correos", "price": "35", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Suscripción trimestral — hasta 3 correos", "price": "90", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Programa — hasta 10 correos (pago único, tuyo para siempre, incluye primer mes de servicios)", "price": "650", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Suscripción mensual — hasta 10 correos", "price": "45", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Suscripción trimestral — hasta 10 correos", "price": "115", "priceCurrency": "USD" }
       ],
       "creator": {
         "@type": "Organization",
@@ -301,7 +304,7 @@
   /* ───────── PRECIOS ───────── */
   .precios { background: linear-gradient(180deg, var(--cream), #EDEFE9); }
   .pricegrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; margin-top: 26px; align-items: stretch; }
-  .planpair { max-width: 880px; margin: 26px auto 0; }
+  .planpair { max-width: 1160px; margin: 26px auto 0; }
   .subblock { border-top: 1px solid var(--line); padding-top: 16px; margin: 0 0 24px; }
   .price.featured .subblock { border-top-color: rgba(255,255,255,.16); }
   .subblock-title { font-size: 11.5px; font-weight: 800; letter-spacing: 1.3px; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
@@ -491,6 +494,8 @@
       <a href="#como">Cómo funciona</a>
       <a href="#firma">La firma</a>
       <a href="#precios">Precios</a>
+      <a href="#comprar">Comprar</a>
+      <a href="#suscripcion">Suscripción</a>
       <a class="cta" href="#contacto" data-intent="Quiero más información">Contacto</a>
     </div>
   </div>
@@ -620,8 +625,8 @@
         </ul>
         <div class="subblock">
           <div class="subblock-title">Suscripción · desde el segundo mes</div>
-          <div class="subrow"><span>Mensual</span><strong><span id="p1SubMonthly">$40</span><small> /mes</small></strong></div>
-          <div class="subrow"><span>Trimestral <em class="save" id="p1SubSave">Ahorrás $20</em></span><strong><span id="p1SubQuarterly">$100</span><small> /3 meses</small></strong></div>
+          <div class="subrow"><span>Mensual</span><strong><span id="p1SubMonthly">$25</span><small> /mes</small></strong></div>
+          <div class="subrow"><span>Trimestral <em class="save" id="p1SubSave">Ahorrás $10</em></span><strong><span id="p1SubQuarterly">$65</span><small> /3 meses</small></strong></div>
         </div>
         <a class="btn btn-ghost" id="buyProgram1" href="#precios" target="_blank" rel="noopener">Comprar — 1 correo</a>
       </div>
@@ -636,14 +641,30 @@
         </ul>
         <div class="subblock">
           <div class="subblock-title">Suscripción · desde el segundo mes</div>
-          <div class="subrow"><span>Mensual</span><strong><span id="p3SubMonthly">$50</span><small> /mes</small></strong></div>
-          <div class="subrow"><span>Trimestral <em class="save" id="p3SubSave">Ahorrás $30</em></span><strong><span id="p3SubQuarterly">$120</span><small> /3 meses</small></strong></div>
+          <div class="subrow"><span>Mensual</span><strong><span id="p3SubMonthly">$35</span><small> /mes</small></strong></div>
+          <div class="subrow"><span>Trimestral <em class="save" id="p3SubSave">Ahorrás $15</em></span><strong><span id="p3SubQuarterly">$90</span><small> /3 meses</small></strong></div>
         </div>
         <a class="btn btn-primary" id="buyProgram3" href="#precios" target="_blank" rel="noopener">Comprar — hasta 3 correos</a>
       </div>
+      <div class="price reveal d2">
+        <span class="plan" id="p10Name">Hasta 10 correos</span>
+        <div class="amount"><span id="p10Price">$650</span><small> pago único</small></div>
+        <div class="per">Tuyo para siempre · incluye tu primer mes de servicios</div>
+        <ul>
+          <li>Hasta 10 empresas, cada una con su correo</li>
+          <li>Perfiles separados: sus carpetas y sus libros</li>
+          <li>Acompañamiento en la puesta en marcha</li>
+        </ul>
+        <div class="subblock">
+          <div class="subblock-title">Suscripción · desde el segundo mes</div>
+          <div class="subrow"><span>Mensual</span><strong><span id="p10SubMonthly">$45</span><small> /mes</small></strong></div>
+          <div class="subrow"><span>Trimestral <em class="save" id="p10SubSave">Ahorrás $20</em></span><strong><span id="p10SubQuarterly">$115</span><small> /3 meses</small></strong></div>
+        </div>
+        <a class="btn btn-ghost" id="buyProgram10" href="#contacto" data-intent="Quiero comprar — hasta 10 correos">Comprar — hasta 10 correos</a>
+      </div>
     </div>
     <p class="pstep-why reveal"><strong>¿Por qué pago único y suscripción aparte?</strong> El programa queda instalado en tu máquina, como tu Excel o tu impresora — no te alquilamos tu propio sistema. La suscripción paga lo que sí corre cada mes: la IA que lee tus PDFs y te responde, la verificación de cada documento con Hacienda, las actualizaciones y el soporte. Si un día la pausás, el programa sigue siendo tuyo y sigue generando tus libros.</p>
-    <div class="seg-title reveal"><span class="seg-ico">👥</span> ¿Más de 3 correos? <small>— despachos y carteras grandes</small></div>
+    <div class="seg-title reveal"><span class="seg-ico">👥</span> ¿Más de 10 correos? <small>— despachos y carteras grandes</small></div>
     <div class="firmplan reveal">
       <div>
         <h3>Evaluamos tu caso y te damos precio</h3>
@@ -657,12 +678,246 @@
       </div>
       <div class="fp-cta">
         <div class="fp-price" id="quotePriceLabel">Precio a tu medida</div>
-        <a class="btn btn-primary" href="#contacto" data-intent="Más de 3 correos — cotización">Agendá tu cita</a>
+        <a class="btn btn-primary" href="#contacto" data-intent="Más de 10 correos — cotización">Agendá tu cita</a>
       </div>
     </div>
     <p class="price-note reveal">💡 <strong>Sin letra pequeña:</strong> si la suscripción termina, el programa sigue siendo tuyo y sigue generando tus libros — solo se pausan la IA, el asistente y las actualizaciones.</p>
   </div>
 </section>
+
+<!-- ───────── COMPRAR EL PROGRAMA ───────── -->
+<style>
+/* Sección Comprar — todos los selectores con prefijo .comprar */
+.comprar { background-color: var(--ink-2); color: #EFF5F4; padding: 84px 0 96px; }
+.comprar h2 { font-size: clamp(30px, 4vw, 42px); margin-bottom: 14px; color: #EFF5F4; }
+.comprar .eyebrow { color: var(--teal-bright); }
+.comprar .subtitle { font-size: 1.1rem; line-height: 1.6; color: rgba(239,245,244,.85); margin-bottom: 3rem; max-width: 600px; }
+.comprar .steps-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 3.5rem; position: relative; }
+.comprar .steps-container::before { content: ''; position: absolute; top: 2.5rem; left: calc(12.5% - 1rem); right: calc(12.5% - 1rem); height: 1px; background: rgba(20,184,166,.25); z-index: 0; }
+.comprar .step { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; transition: transform .2s ease; }
+.comprar .step:hover { transform: translateY(-3px); }
+.comprar .step-circle { width: 5rem; height: 5rem; border-radius: 50%; background-color: rgba(20,184,166,.14); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; flex-shrink: 0; position: relative; z-index: 2; }
+.comprar .step-number { font-family: var(--display); font-size: 2rem; font-weight: 800; color: var(--teal-bright); }
+/* Sello dorado — se estampa cuando el paso entra en pantalla */
+.comprar .step-4.in .step-circle { animation: sealStamp .5s ease-out .3s both; }
+@keyframes sealStamp { 0% { transform: scale(1.15); opacity: .5; } 100% { transform: scale(1); opacity: 1; } }
+.comprar .step-4 .step-circle { border: 2px solid #D4AF37; background: radial-gradient(circle at 30% 30%, rgba(212,175,55,.15), rgba(212,175,55,.08)); }
+.comprar .step-4 .step-circle::after { content: '✓'; position: absolute; font-size: 1.6rem; color: #DDBA62; font-weight: 900; }
+.comprar .step-4 .seal-label { position: absolute; bottom: -1.7rem; left: 50%; transform: translateX(-50%); font-size: .65rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #D4AF37; white-space: nowrap; }
+.comprar .step-content h3 { font-family: var(--display); font-size: 1.2rem; font-weight: 700; margin-bottom: .6rem; color: #EFF5F4; line-height: 1.3; }
+.comprar .step-content p { font-size: .95rem; line-height: 1.5; color: rgba(239,245,244,.8); }
+.comprar .step-4 .step-content { margin-top: 1.9rem; }
+.comprar .buy-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 2.6rem; }
+.comprar .btn-ghost { border-color: rgba(239,245,244,.3); color: #EFF5F4; }
+.comprar .btn-ghost:hover { border-color: var(--teal-bright); color: var(--teal-bright); }
+.comprar .btn-primary { background: var(--teal-bright); color: var(--ink); box-shadow: 0 8px 24px rgba(20,184,166,.35); }
+.comprar .trust-line { font-size: .95rem; line-height: 1.6; color: rgba(239,245,244,.7); border-top: 1px solid rgba(20,184,166,.2); padding-top: 1.8rem; max-width: 700px; margin: 0 auto; text-align: center; }
+.comprar .trust-line strong { color: #EFF5F4; font-weight: 600; }
+@media (max-width: 760px) {
+  .comprar { padding: 64px 0 72px; }
+  .comprar .steps-container { grid-template-columns: 1fr; gap: 2.4rem; margin-bottom: 2.5rem; }
+  .comprar .steps-container::before { display: none; }
+  .comprar .buy-buttons { flex-direction: column; align-items: stretch; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .comprar .step, .comprar .step:hover { transition: none; transform: none; }
+  .comprar .step-4.in .step-circle { animation: none; }
+}
+</style>
+<section class="comprar" id="comprar">
+  <div class="wrap">
+    <span class="eyebrow reveal">Comprar el programa</span>
+    <h2 class="reveal">Del clic a tu licencia firmada, en cuatro pasos.</h2>
+    <p class="subtitle reveal d1">El proceso es rápido, seguro y transparente. Recibís tu instalador y tu licencia en menos de 24 horas.</p>
+    <div class="steps-container">
+      <div class="step step-1 reveal d1">
+        <div class="step-circle"><span class="step-number">1</span></div>
+        <div class="step-content">
+          <h3>Elegí tu plan</h3>
+          <p>1 correo ($250), hasta 3 ($375) o hasta 10 ($650). Pago único.</p>
+        </div>
+      </div>
+      <div class="step step-2 reveal d2">
+        <div class="step-circle"><span class="step-number">2</span></div>
+        <div class="step-content">
+          <h3>Datos de tu comprobante</h3>
+          <p>Elegís CCF o factura de consumidor final y dejás tus datos fiscales.</p>
+        </div>
+      </div>
+      <div class="step step-3 reveal d3">
+        <div class="step-circle"><span class="step-number">3</span></div>
+        <div class="step-content">
+          <h3>Pagá seguro con Wompi</h3>
+          <p>Tarjeta o transferencia, en línea. Sin sorpresas ni cargos ocultos.</p>
+        </div>
+      </div>
+      <div class="step step-4 reveal d3">
+        <div class="step-circle"><span class="seal-label">Licencia firmada</span></div>
+        <div class="step-content">
+          <h3>Recibí tu programa</h3>
+          <p>Instalador + licencia a tu nombre, con video de puesta en marcha.</p>
+        </div>
+      </div>
+    </div>
+    <div class="buy-buttons reveal">
+      <a class="btn btn-ghost" id="buy2Program1" href="#precios">Comprar — 1 correo · $250</a>
+      <a class="btn btn-primary" id="buy2Program3" href="#precios">Comprar — hasta 3 correos · $375</a>
+      <a class="btn btn-ghost" id="buy2Program10" href="#contacto" data-intent="Quiero comprar — hasta 10 correos">Comprar — hasta 10 correos · $650</a>
+    </div>
+    <p class="trust-line reveal d1">El programa es <strong>tuyo para siempre</strong>, corre local en tu computadora, y detrás hay una firma de contadores real — <strong>García Vidal, Contaduría y Auditoría</strong> — que lo usa todos los días.</p>
+  </div>
+</section>
+
+<!-- ───────── SUSCRIPCIÓN MENSUAL ───────── -->
+<style>
+/* Sección Suscripción — todos los selectores con prefijo .susc */
+.susc { background-color: var(--cream); padding: 84px 0 96px; color: var(--ink); }
+.susc .susc-header { text-align: center; margin-bottom: 2.6rem; }
+.susc h2 { font-size: clamp(30px, 4vw, 42px); margin-bottom: 14px; }
+.susc .susc-intro { font-size: 1.1rem; color: #5B6B70; max-width: 45rem; margin: 0 auto; line-height: 1.6; }
+.susc-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.3rem; margin-bottom: 3rem; }
+@media (min-width: 1024px) { .susc-features { grid-template-columns: repeat(5, 1fr); } }
+.susc-feature { padding: 1.4rem; background-color: #fff; border: 1px solid #E3E6E0; border-radius: 14px; transition: border-color .2s ease-out; }
+.susc-feature:hover { border-color: var(--teal); }
+.susc-feature-icon { font-size: 1.5rem; background-color: var(--teal-soft); width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; border-radius: 10px; margin-bottom: .9rem; }
+.susc-feature h3 { font-size: .95rem; font-weight: 600; line-height: 1.4; color: var(--ink); margin: 0; font-family: var(--body); }
+.susc-pricing { max-width: 55rem; margin: 0 auto; }
+.susc-toggle-input { position: absolute; opacity: 0; pointer-events: none; }
+.susc-toggle-controls { text-align: center; margin-bottom: 1.6rem; }
+.susc-toggle-label { display: inline-flex; background-color: #E3E6E0; border-radius: 10px; overflow: hidden; cursor: pointer; }
+.susc-toggle-label span { padding: .7rem 1.5rem; font-weight: 600; font-size: .95rem; color: #5B6B70; transition: background-color .2s ease-out, color .2s ease-out; user-select: none; }
+.susc-toggle-label .susc-toggle-monthly { background-color: #fff; color: var(--teal); font-weight: 700; }
+.susc-toggle-input:checked ~ .susc-toggle-controls .susc-toggle-monthly { background-color: transparent; color: #5B6B70; font-weight: 600; }
+.susc-toggle-input:checked ~ .susc-toggle-controls .susc-toggle-quarterly { background-color: #fff; color: var(--teal); font-weight: 700; }
+.susc-table { width: 100%; border-collapse: collapse; margin-bottom: .4rem; }
+.susc-table thead { border-bottom: 2px solid var(--ink); }
+.susc-table th, .susc-table td { padding: 1rem; text-align: left; }
+.susc-table th { font-weight: 700; font-size: .9rem; letter-spacing: .5px; text-transform: uppercase; color: var(--ink); }
+.susc-table tbody tr { border-bottom: 1px solid #E3E6E0; }
+.susc-table tbody tr:last-child { border-bottom: none; }
+.susc-table td { font-size: .95rem; color: var(--ink); vertical-align: middle; }
+.susc-price { font-family: var(--display); font-size: 1.5rem; font-weight: 800; color: var(--teal); }
+.susc-col-quarterly, .susc-col-monthly { transition: opacity .2s ease-out; }
+.susc-toggle-input ~ .susc-table .susc-col-quarterly { opacity: .45; }
+.susc-toggle-input:checked ~ .susc-table .susc-col-quarterly { opacity: 1; }
+.susc-toggle-input:checked ~ .susc-table .susc-col-monthly { opacity: .45; }
+.susc-note { font-size: .85rem; color: #5B6B70; text-align: center; margin-top: .8rem; }
+.susc-guarantee { background-color: rgba(14,110,107,.04); border: 1px solid #E3E6E0; border-left: 4px solid var(--teal); padding: 1.6rem 1.75rem; margin: 2.4rem auto 0; border-radius: 6px; max-width: 55rem; }
+.susc-guarantee p { font-size: 1rem; line-height: 1.6; color: var(--ink); margin: 0; }
+.susc-guarantee strong { color: var(--teal); font-weight: 700; }
+.susc-cta { text-align: center; margin-top: 2.6rem; }
+.susc-cta-note { font-size: .85rem; color: #5B6B70; margin-top: .9rem; }
+@media (max-width: 760px) {
+  .susc { padding: 64px 0 72px; }
+  .susc-features { grid-template-columns: 1fr; gap: 1rem; }
+  .susc-table th, .susc-table td { padding: .75rem .5rem; font-size: .85rem; }
+  .susc-price { font-size: 1.2rem; }
+  .susc-toggle-label span { padding: .6rem 1rem; font-size: .85rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .susc-feature, .susc-toggle-label span, .susc-col-quarterly, .susc-col-monthly { transition: none; }
+}
+</style>
+<section class="susc" id="suscripcion">
+  <div class="wrap">
+    <div class="susc-header">
+      <span class="eyebrow reveal">Suscripción mensual</span>
+      <h2 class="reveal">Lo que sí corre cada mes, y lo que cuesta.</h2>
+      <p class="susc-intro reveal d1">El programa se compra una vez; estos son los servicios vivos que la suscripción mantiene trabajando para vos.</p>
+    </div>
+    <div class="susc-features">
+      <div class="susc-feature reveal d1">
+        <div class="susc-feature-icon">🧠</div>
+        <h3>IA que lee facturas en PDF sin archivo oficial</h3>
+      </div>
+      <div class="susc-feature reveal d1">
+        <div class="susc-feature-icon">🛡️</div>
+        <h3>Verificación de cada documento con Hacienda — detecta anulados</h3>
+      </div>
+      <div class="susc-feature reveal d2">
+        <div class="susc-feature-icon">💬</div>
+        <h3>Asistente que responde en español de contador</h3>
+      </div>
+      <div class="susc-feature reveal d2">
+        <div class="susc-feature-icon">🔄</div>
+        <h3>Actualizaciones del programa</h3>
+      </div>
+      <div class="susc-feature reveal d3">
+        <div class="susc-feature-icon">🤝</div>
+        <h3>Soporte directo de la firma</h3>
+      </div>
+    </div>
+    <div class="susc-pricing reveal">
+      <input type="checkbox" id="toggle-billing" class="susc-toggle-input" aria-label="Cambiar entre precio mensual y trimestral">
+      <div class="susc-toggle-controls">
+        <label for="toggle-billing" class="susc-toggle-label">
+          <span class="susc-toggle-monthly">Mensual</span>
+          <span class="susc-toggle-quarterly">Trimestral</span>
+        </label>
+      </div>
+      <table class="susc-table">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th class="susc-col-monthly">Mensual</th>
+            <th class="susc-col-quarterly">Trimestral</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1 correo</strong></td>
+            <td class="susc-col-monthly"><span id="sub1Monthly" class="susc-price">$25</span> /mes</td>
+            <td class="susc-col-quarterly"><span id="sub1Quarterly" class="susc-price">$65</span> /3 meses</td>
+          </tr>
+          <tr>
+            <td><strong>Hasta 3 correos</strong></td>
+            <td class="susc-col-monthly"><span id="sub3Monthly" class="susc-price">$35</span> /mes</td>
+            <td class="susc-col-quarterly"><span id="sub3Quarterly" class="susc-price">$90</span> /3 meses</td>
+          </tr>
+          <tr>
+            <td><strong>Hasta 10 correos</strong></td>
+            <td class="susc-col-monthly"><span id="sub10Monthly" class="susc-price">$45</span> /mes</td>
+            <td class="susc-col-quarterly"><span id="sub10Quarterly" class="susc-price">$115</span> /3 meses</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="susc-note">Tu primer mes ya viene incluido con la compra del programa.</p>
+    </div>
+    <div class="susc-guarantee reveal d1">
+      <p><strong>Si un día la pausás,</strong> el programa sigue siendo tuyo y sigue generando tus libros. Solo se pausan la IA, el asistente y las actualizaciones. Sin rehenes.</p>
+    </div>
+    <div class="susc-cta reveal d2">
+      <a class="btn btn-primary" href="#contacto" data-intent="Quiero suscribirme">Activá tu suscripción</a>
+      <p class="susc-cta-note">Te escribimos en menos de 24 horas para activarla.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── CAPA DE MICRO-INTERACCIONES ───────── -->
+<style>
+/* Botones: elevación y feedback táctil */
+.btn { transition: transform .15s ease-out, box-shadow .15s ease-out; }
+.btn:hover { transform: translateY(-1px); box-shadow: 0 8px 16px rgba(14,31,36,.2); }
+.btn:active { transform: translateY(0); box-shadow: 0 4px 8px rgba(14,31,36,.15); }
+.btn:focus-visible { outline: 2px solid var(--teal-bright); outline-offset: 2px; }
+/* Tarjetas de precio: elevación con borde de énfasis */
+.price { transition: transform .25s ease-out, box-shadow .25s ease-out, border-color .25s ease-out; }
+.price:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(14,110,107,.12); border-color: var(--teal); }
+.price.featured:hover { transform: translateY(-6px); box-shadow: 0 16px 32px rgba(14,110,107,.15); }
+/* Números de precio: asentamiento al revelar */
+.reveal:not(.in) .amount { opacity: 0; transform: translateY(6px); }
+.reveal.in .amount { transition: opacity .45s ease-out, transform .45s ease-out; opacity: 1; transform: translateY(0); }
+/* FAQ: rotación del indicador al abrir */
+details summary::after { transition: transform .2s ease-out; }
+details[open] summary::after { transform: rotate(45deg); }
+/* Navegación: subrayado animado (excepto el botón CTA) */
+.navlinks a:not(.cta) { position: relative; }
+.navlinks a:not(.cta)::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background-color: var(--teal-bright); transform: scaleX(0); transform-origin: left; transition: transform .2s ease-out; }
+.navlinks a:not(.cta):hover::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) {
+  .btn, .price, .reveal:not(.in) .amount, .reveal.in .amount, details summary::after, .navlinks a:not(.cta)::after { transition: none !important; transform: none !important; animation: none !important; opacity: 1; }
+}
+</style>
 
 <!-- ───────── FAQ ───────── -->
 <section class="faq">
@@ -692,7 +947,8 @@
         <option selected>Quiero más información</option>
         <option>Quiero comprar — 1 correo</option>
         <option>Quiero comprar — hasta 3 correos</option>
-        <option>Más de 3 correos — cotización</option>
+        <option>Quiero comprar — hasta 10 correos</option>
+        <option>Más de 10 correos — cotización</option>
         <option>Quiero suscribirme</option>
       </select>
       <input type="email" name="email" required placeholder="tu@correo.com" aria-label="Tu correo de contacto">
@@ -769,9 +1025,24 @@
   setText("p3SubMonthly", site.pricingProgram3SubMonthly);
   setText("p3SubQuarterly", site.pricingProgram3SubQuarterly);
   setText("p3SubSave", site.pricingProgram3SubSave);
+  setText("p10Name", site.pricingProgram10Name);
+  setText("p10Price", site.pricingProgram10Price);
+  setText("p10SubMonthly", site.pricingProgram10SubMonthly);
+  setText("p10SubQuarterly", site.pricingProgram10SubQuarterly);
+  setText("p10SubSave", site.pricingProgram10SubSave);
   setText("quotePriceLabel", site.pricingQuoteLabel);
+  setText("sub1Monthly", site.pricingProgram1SubMonthly);
+  setText("sub1Quarterly", site.pricingProgram1SubQuarterly);
+  setText("sub3Monthly", site.pricingProgram3SubMonthly);
+  setText("sub3Quarterly", site.pricingProgram3SubQuarterly);
+  setText("sub10Monthly", site.pricingProgram10SubMonthly);
+  setText("sub10Quarterly", site.pricingProgram10SubQuarterly);
   setLink("buyProgram1", site.pricingProgram1BuyUrl);
   setLink("buyProgram3", site.pricingProgram3BuyUrl);
+  setLink("buyProgram10", site.pricingProgram10BuyUrl);
+  setLink("buy2Program1", site.pricingProgram1BuyUrl);
+  setLink("buy2Program3", site.pricingProgram3BuyUrl);
+  setLink("buy2Program10", site.pricingProgram10BuyUrl);
   const leadIntent = document.getElementById("leadIntent");
   document.querySelectorAll("a[data-intent]").forEach((link) => {
     link.addEventListener("click", () => {
@@ -892,6 +1163,10 @@
     [
       ["buyProgram1", site.pricingProgram1Name, site.pricingProgram1Price, site.pricingProgram1BuyUrl],
       ["buyProgram3", site.pricingProgram3Name, site.pricingProgram3Price, site.pricingProgram3BuyUrl],
+      ["buyProgram10", site.pricingProgram10Name, site.pricingProgram10Price, site.pricingProgram10BuyUrl],
+      ["buy2Program1", site.pricingProgram1Name, site.pricingProgram1Price, site.pricingProgram1BuyUrl],
+      ["buy2Program3", site.pricingProgram3Name, site.pricingProgram3Price, site.pricingProgram3BuyUrl],
+      ["buy2Program10", site.pricingProgram10Name, site.pricingProgram10Price, site.pricingProgram10BuyUrl],
     ].forEach(([id, name, price, url]) => {
       const btn = document.getElementById(id);
       if (!btn) return;
