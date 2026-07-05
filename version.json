@@ -1,6 +1,7 @@
 {
-  "version": "1.4.1",
-  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.4.1/BillingAgent_Setup_v1.4.1.exe",
-  "notes": "Los avisos de Hacienda ya no detienen el proceso; libros ordenados por mes; aviso claro si el libro está abierto en Excel.",
-  "published": "2026-07-02"
+  "version": "1.4.2",
+  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.4.2/BillingAgent_Setup_v1.4.2.exe",
+  "sha256": "852bfd529a864f3dc6746723bc6fa898e854eb6b324dc61837a51953b984a8a5",
+  "notes": "Soporte para correo Hotmail/Outlook; un archivo dañado ya no detiene el proceso (queda en Revisión con su motivo); actualización con un clic desde el programa.",
+  "published": "2026-07-04"
 }
