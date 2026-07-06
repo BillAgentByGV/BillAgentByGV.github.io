@@ -4,7 +4,7 @@
 
 ## Qué hace
 
-- Escanea automáticamente el correo de la empresa (Gmail, acceso de solo lectura) y encuentra las facturas electrónicas (DTE: CCF, facturas, notas de crédito/débito, retenciones).
+- Escanea automáticamente el correo de la empresa (Gmail y Hotmail/Outlook, acceso de solo lectura), los días que el usuario elija, y encuentra las facturas electrónicas (DTE: CCF, facturas, notas de crédito/débito, retenciones).
 - Clasifica y archiva cada documento en carpetas por mes y tipo.
 - Genera el libro de compras en Excel, cuadrado y listo para la declaración de IVA (F-07).
 - Verifica cada DTE contra el verificador público del Ministerio de Hacienda de El Salvador, incluyendo detección de documentos anulados.
