@@ -1,7 +1,7 @@
 {
-  "version": "1.4.2",
-  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.4.2/BillingAgent_Setup_v1.4.2.exe",
-  "sha256": "852bfd529a864f3dc6746723bc6fa898e854eb6b324dc61837a51953b984a8a5",
-  "notes": "Soporte para correo Hotmail/Outlook; un archivo dañado ya no detiene el proceso (queda en Revisión con su motivo); actualización con un clic desde el programa.",
-  "published": "2026-07-04"
+  "version": "1.4.3",
+  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.4.3/BillingAgent_Setup_v1.4.3.exe",
+  "sha256": "757dcf8edae329be490f36deadb8fead33ac4920fca85faa2facf76d2b78b925",
+  "notes": "Ahora se actualiza solo en tu computadora los días que elijás, sin abrir el programa (automatización configurable). Los correos con acentos o emoji ya no interrumpen el proceso. Recordatorio para marcar el mes como declarado cuando vence el F-07. Al actualizar, se instala en el mismo lugar y tus datos quedan intactos.",
+  "published": "2026-07-07"
 }
