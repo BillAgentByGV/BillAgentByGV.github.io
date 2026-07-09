@@ -1,7 +1,7 @@
 {
-  "version": "1.4.3",
-  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.4.3/BillingAgent_Setup_v1.4.3.exe",
-  "sha256": "757dcf8edae329be490f36deadb8fead33ac4920fca85faa2facf76d2b78b925",
-  "notes": "Ahora se actualiza solo en tu computadora los días que elijás, sin abrir el programa (automatización configurable). Los correos con acentos o emoji ya no interrumpen el proceso. Recordatorio para marcar el mes como declarado cuando vence el F-07. Al actualizar, se instala en el mismo lugar y tus datos quedan intactos.",
-  "published": "2026-07-07"
+  "version": "1.4.4",
+  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.4.4/BillingAgent_Setup_v1.4.4.exe",
+  "sha256": "1e959fc8993205b3c9be5a7f9aed6e7983888674bb906998f6210f14f756b0c8",
+  "notes": "Los correos con adjuntos que OneDrive/antivirus bloquean momentáneamente (error de Acceso denegado) ya no interrumpen el proceso — se reintenta solo. El selector de mes ahora ofrece meses recientes a usuarios nuevos. Un mes sin documentos ya no bloquea el cierre. Al actualizar, se instala en el mismo lugar y tus datos quedan intactos.",
+  "published": "2026-07-08"
 }
