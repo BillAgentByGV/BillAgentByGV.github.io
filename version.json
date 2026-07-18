@@ -1,7 +1,7 @@
 {
-  "version": "1.4.4",
-  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.4.4/BillingAgent_Setup_v1.4.4.exe",
-  "sha256": "1e959fc8993205b3c9be5a7f9aed6e7983888674bb906998f6210f14f756b0c8",
-  "notes": "Los correos con adjuntos que OneDrive/antivirus bloquean momentáneamente (error de Acceso denegado) ya no interrumpen el proceso — se reintenta solo. El selector de mes ahora ofrece meses recientes a usuarios nuevos. Un mes sin documentos ya no bloquea el cierre. Al actualizar, se instala en el mismo lugar y tus datos quedan intactos.",
-  "published": "2026-07-08"
+  "version": "1.6.0",
+  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.6.0/BillingAgent_Setup_v1.6.0.exe",
+  "sha256": "9ff4bae0e7a2478d841dc59c3273b25f93a6fe57dea7d58704a5e835cd1c73de",
+  "notes": "Rendimiento: procesar un mes con documentos de meses cerrados ya cargados pasa de minutos a segundos. La consola distingue con claridad cuando solo falta tu revision (ambar) de cuando hay un problema real (rojo), y avisa con anticipacion el vencimiento del F-07. Podes aprobar documentos con soporte parcial dejando por escrito el motivo, con auditoria completa. Nueva pantalla de impresion de documentos. Al actualizar, se instala en el mismo lugar y tus datos quedan intactos.",
+  "published": "2026-07-18"
 }
