@@ -1,7 +1,7 @@
 {
-  "version": "1.6.2",
-  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.6.2/BillingAgent_Setup_v1.6.2.exe",
-  "sha256": "b2251b303965913b127f1464d7207d3b8e475c31fce53c0b3c778f8e2ec91688",
-  "notes": "Corrige de raíz Actualizar ahora: elimina el paso tasklist/find que podía quedar colgado, espera el cierre de BillingAgent mediante Windows y comprueba el resultado real del instalador. Si Seguridad de Windows lo bloquea, conserva el instalador verificado y muestra instrucciones claras para recuperarse. Tus datos y documentos permanecen intactos.",
+  "version": "1.6.3",
+  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.6.3/BillingAgent_Setup_v1.6.3.exe",
+  "sha256": "048811b11a5fa6a081c97043f782631f962c25619c718085448091eb8cc6c661",
+  "notes": "Versión final para validar el actualizador corregido desde 1.6.2. BillingAgent ahora espera el cierre mediante Windows, comprueba el resultado real del instalador y, si Seguridad de Windows lo bloquea, conserva el archivo verificado y muestra instrucciones de recuperación. Tus datos y documentos permanecen intactos.",
   "published": "2026-07-18"
 }
