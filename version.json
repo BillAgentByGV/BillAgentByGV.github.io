@@ -1,7 +1,7 @@
 {
-  "version": "1.6.0",
-  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.6.0/BillingAgent_Setup_v1.6.0.exe",
-  "sha256": "9ff4bae0e7a2478d841dc59c3273b25f93a6fe57dea7d58704a5e835cd1c73de",
-  "notes": "Rendimiento: procesar un mes con documentos de meses cerrados ya cargados pasa de minutos a segundos. La consola distingue con claridad cuando solo falta tu revision (ambar) de cuando hay un problema real (rojo), y avisa con anticipacion el vencimiento del F-07. Podes aprobar documentos con soporte parcial dejando por escrito el motivo, con auditoria completa. Nueva pantalla de impresion de documentos. Al actualizar, se instala en el mismo lugar y tus datos quedan intactos.",
+  "version": "1.6.1",
+  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.6.1/BillingAgent_Setup_v1.6.1.exe",
+  "sha256": "3ffeadf2e41e619b3532497056b2892515242c48843b797e143bc1c208b52def",
+  "notes": "Corrige el boton Actualizar ahora: el paso interno que espera a que el programa se cierre podia quedar visible en pantalla y no avanzar. Ahora queda oculto y hay un limite de espera, la actualizacion siempre termina. Incluye tambien lo de 1.6.0: procesamiento de meses mas rapido, distincion clara entre revision pendiente y problema real, aviso anticipado del vencimiento F-07, aprobacion auditada de soporte parcial, impresion de documentos. Al actualizar, se instala en el mismo lugar y tus datos quedan intactos.",
   "published": "2026-07-18"
 }
