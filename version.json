@@ -1,7 +1,7 @@
 {
-  "version": "1.6.3",
-  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.6.3/BillingAgent_Setup_v1.6.3.exe",
-  "sha256": "048811b11a5fa6a081c97043f782631f962c25619c718085448091eb8cc6c661",
-  "notes": "Versión final para validar el actualizador corregido desde 1.6.2. BillingAgent ahora espera el cierre mediante Windows, comprueba el resultado real del instalador y, si Seguridad de Windows lo bloquea, conserva el archivo verificado y muestra instrucciones de recuperación. Tus datos y documentos permanecen intactos.",
-  "published": "2026-07-18"
+  "version": "1.6.4",
+  "url": "https://github.com/BillAgentByGV/BillAgentByGV.github.io/releases/download/v1.6.4/BillingAgent_Setup_v1.6.4.exe",
+  "sha256": "9b81cc8a639840ad2e2e6ba53d89adac5093f235fc56fdc56c6c0791b9472d20",
+  "notes": "Corrige un caso silencioso donde compras exentas de IVA (intereses bancarios, seguros sin IVA) aprobadas desde la revisión manual quedaban en el libro con monto $0, aunque el total del documento fuera correcto. El formulario de revisión ahora tiene un campo para el monto exento, un monto ya cargado se clasifica solo en gravado o exento, y una aprobación sin datos suficientes se rechaza con el motivo exacto en vez de guardarse en $0 en silencio. Tus datos y documentos permanecen intactos.",
+  "published": "2026-07-27"
 }
